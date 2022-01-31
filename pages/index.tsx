@@ -11,8 +11,7 @@ import { motion } from 'framer-motion'
     animate='visible'
     exit='exit'>">
       <h6 className="my-3 text-base font-medium">
-        I am currently pursuing B.Tech Degree (Final Year) in Computer Science
-        Engineering from Amity University Kolkata . I have interest in working on new technologies like react.js , I like to work on projects and I aspire to become a software developer .
+        Currently in Final Year of B.Tech(CSE) in Amity University Kolkata . I like to build and develop projects and I aspire to become a software developer .
       </h6>
       <div
         className="flex-grow p-4 mt-5 dark:bg-dark-100 bg-gray-400  "

@@ -1,20 +1,20 @@
 module.exports = {
-  purge: ['./pages/**/*.tsx', './components/**/*.tsx'],
-  darkMode: "class", 
+  purge: ["./pages/**/*.tsx", "./components/**/*.tsx"],
+  darkMode: "class",
   theme: {
-    fontFamily:{
-      'poppins': ['Poppins'],
-      'karla': ['Karla'],
+    fontFamily: {
+      poppins: ["Poppins"],
+      karla: ["Karla"],
     },
     boxShadow: {
       "custom-light": " 0 0 10px #313131",
       "custom-dark": "5px 5px 10px #0a0c0e , -5px -5px 10px #14161c",
     },
     extend: {
-      colors:{
-        'mauve-a':'#79cbb8',
-        'mauve-b':'#500472',
-        dark:{
+      colors: {
+        "mauve-b": "#08D9D6",
+        "mauve-a": "#5800FF",
+        dark: {
           DEFAULT: "#010101",
           100: "#0a0b0e",
           200: "#16181d",
@@ -22,7 +22,7 @@ module.exports = {
           500: "#0f1115",
           700: "#202125",
         },
-      }
+      },
     },
   },
   variants: {
@@ -31,4 +31,4 @@ module.exports = {
     },
   },
   plugins: [],
-}
+};

@@ -24,4 +24,4 @@ export interface IProject {
   key_techs: string[];
 }
 
-export type Category = "React" | "Mysql" | "Python" | "Java" | "API";
+export type Category = "React" | "MERN" | "Python" | "Java" | "API";

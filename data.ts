@@ -1,6 +1,6 @@
 import { RiComputerLine } from "react-icons/ri";
 import { FaServer } from "react-icons/fa";
-import { SiLeetcode , SiCodechef } from "react-icons/si";
+import { SiLeetcode , SiCodechef , SiEthereum} from "react-icons/si";
 import { GrWordpress,GrReactjs } from "react-icons/gr";
 import { IProject, IService, Skill } from "./type";
 import { BsCircleFill } from "react-icons/bs";
@@ -11,36 +11,36 @@ export const services: IService[] = [
     Icon: RiComputerLine,
     title: "Frontend Development",
     about:
-      "I know <b> React.js</b>,<b>Next.js</b>,<b>JavaScript</b>,<b>TypeScript(a bit)</b> ",
+      "I know React.js, Next.js, JavaScript and TypeScript",
   },
   {
     Icon: FaServer,
     title: "Backend  Development",
     about:
-      "I have made backends using <b>Node.js</b>,<b>Java</b> with <b>MongoDb</b> , <b>MySql</b> as DBs",
+      "I have made backends using Node.js, Java with MongoDb, MySql",
   },
   {
     Icon: GrReactjs,
-    title: "MERN",
+    title: "MERN Stack",
     about:
-      "I have MERN stack Skills 💪",
+      "I have used MERN stack for a project ",
   },
   {
     Icon: SiLeetcode,
-    title: "Practicing DS Algo",
-    about: "I regularly solve problems on <b>Leetcode</b>  and <b>CodeForces</b> ",
+    title: "Practicing DSA",
+    about: "I regularly solve problems on <b>Leetcode</b>  and <b>GFG</b> ",
   },
   {
-    Icon: GrWordpress,
-    title: "Experience with Wordpress ",
+    Icon: SiEthereum,
+    title: "Learning BlockChain ",
     about:
-      "I can develop websites using wordpress .",
+      "Learning Solidity and Smart Contracts.",
   },
   {
     Icon: SiCodechef,
     title: "3 ⭐ At Codechef",
     about:
-      "Trying my hands on compititive coding.",
+      "Giving Contests to improve DSA Skills",
   },
 ];
 
@@ -48,7 +48,7 @@ export const languages: Skill[] = [
   {
     Icon: BsCircleFill,
     name: "DSA",
-    level: "65",
+    level: "75",
   },
   {
     Icon: BsCircleFill,
@@ -69,11 +69,6 @@ export const languages: Skill[] = [
     Icon: BsCircleFill,
     name: "Python",
     level: "50",
-  },
-  {
-    Icon: BsCircleFill,
-    name: "APIs",
-    level: "60",
   },
   {
     Icon: BsCircleFill,
@@ -108,6 +103,17 @@ export const tools: Skill[] = [
 export const projects: IProject[] = [
   { 
     id:1,
+    name: "Fake Crypto Trader",
+    description:
+      "This app can buy , sell cryptos with fake money at realtime prices and books profits or losses",
+    image_path: "/semiauto.png",
+    deployed_url: "https://semi-automatic-trader-client.herokuapp.com",
+    github_url: 'https://github.com/dark-faze/SemiAutomatic-Trader',
+    category: ["MERN"],
+    key_techs: ["React", "Node.js", "Express.js", "MongoDb" ,"Material UI"],
+  },
+  { 
+    id:2,
     name: "Memagram (Insta Clone)",
     description:
       "This app is an insta clone that has user authentication , image uploading , darkmode and you comment on pictures",
@@ -118,19 +124,19 @@ export const projects: IProject[] = [
     key_techs: ["React", "Firebase", "Cloud FireStore"],
   },
   {
-    id:2,
+    id:3,
     name: "Music ReviewNRating",
     image_path: "/music.png",
     deployed_url: "#",
     github_url: "https://github.com/dark-faze/Music-Review-And-Rating",
-    category: ["Mysql","Java",'API'],
+    category: ["Java",'API'],
     description:
       "A app which has user authentication , seach and play songs , rate and review songs .",
     key_techs: ["Java", "JavaScript", "Mysql","Spotify Api"],
   },
 
   {
-    id:3,
+    id:4,
     name: "Covid Data Visualization",
     image_path: "/cod.png",
     deployed_url: "#",
@@ -142,7 +148,7 @@ export const projects: IProject[] = [
   },
 
   {
-    id:4,
+    id:5,
     name: "BlackClover Chapter-Notifier",
     image_path: "/chapter.png",
     deployed_url: "#",
@@ -153,7 +159,7 @@ export const projects: IProject[] = [
     key_techs: ["Toast notifier","Html Session"],
   },
   {
-    id:5,
+    id:6,
     name: "Flappy Nero",
     image_path: "/nero.png",
     deployed_url: "#",
@@ -164,7 +170,7 @@ export const projects: IProject[] = [
     key_techs: ["Pygame"],
   },
   {
-    id:6,
+    id:7,
     name: "Titanic Survival",
     image_path: "/titanic.jpg",
     deployed_url: "#",

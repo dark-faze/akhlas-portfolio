@@ -3,9 +3,13 @@ import Navbar from '../components/Navbar'
 import Sidebar from '../components/Sidebar'
 import { ThemeProvider } from "next-themes";
 import { AnimatePresence } from 'framer-motion'
+import countapi from 'countapi-js';
 import router from 'next/router';
 
 function MyApp({ Component, pageProps }) {
+countapi.visits().then((result) => {
+    console.log("This page was visited " + result.value);
+});
   return (
    <ThemeProvider attribute="class">
   <div className = 'grid grid-cols-12 gap-6 my-14 lg:px-48 px-5 sm:px-20 md:px-32'>
