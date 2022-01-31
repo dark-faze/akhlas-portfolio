@@ -11,13 +11,19 @@ export const services: IService[] = [
     Icon: RiComputerLine,
     title: "Frontend Development",
     about:
-      "I can build a beautiful websites using <b> HTML</b>,<b>CSS</b> and <b>JavaScript</b> ",
+      "I know <b> React.js</b>,<b>Next.js</b>,<b>JavaScript</b>,<b>TypeScript(a bit)</b> ",
   },
   {
     Icon: FaServer,
     title: "Backend  Development",
     about:
-      "I have experience in <b>Mysql</b> , Java as a Backend , Using APIs",
+      "I have made backends using <b>Node.js</b>,<b>Java</b> with <b>MongoDb</b> , <b>MySql</b> as DBs",
+  },
+  {
+    Icon: GrReactjs,
+    title: "MERN",
+    about:
+      "I have MERN stack Skills 💪",
   },
   {
     Icon: SiLeetcode,
@@ -25,16 +31,10 @@ export const services: IService[] = [
     about: "I regularly solve problems on <b>Leetcode</b>  and <b>CodeForces</b> ",
   },
   {
-    Icon: GrReactjs,
-    title: "Learning MERN",
-    about:
-      "Learning how to react and express",
-  },
-  {
     Icon: GrWordpress,
     title: "Experience with Wordpress ",
     about:
-      "I have some experience using wordpress to develop websites .",
+      "I can develop websites using wordpress .",
   },
   {
     Icon: SiCodechef,
@@ -47,7 +47,7 @@ export const services: IService[] = [
 export const languages: Skill[] = [
   {
     Icon: BsCircleFill,
-    name: "DSA using C++",
+    name: "DSA",
     level: "65",
   },
   {
@@ -63,7 +63,7 @@ export const languages: Skill[] = [
   {
     Icon: BsCircleFill,
     name: "React",
-    level: "40",
+    level: "80",
   },
   {
     Icon: BsCircleFill,
@@ -78,7 +78,7 @@ export const languages: Skill[] = [
   {
     Icon: BsCircleFill,
     name: "Backend",
-    level: "50",
+    level: "80",
   },
 ];
 
@@ -91,12 +91,12 @@ export const tools: Skill[] = [
   {
     Icon: BsCircleFill,
     name: "Photoshop",
-    level: "55",
+    level: "70",
   },
   {
     Icon: BsCircleFill,
     name: "Premier Pro",
-    level: "60",
+    level: "70",
   },
   {
     Icon: BsCircleFill,
