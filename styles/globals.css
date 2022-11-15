@@ -10,10 +10,15 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-image: linear-gradient(to right bottom, #79cbb8, #500472);
+  background-image: linear-gradient(to right bottom, #FF9A3C, #FF6F3C);
 }
 
 ::-webkit-scrollbar {
   width: 8px;
   height: 0px;
+}
+
+@font-face {
+  font-family: "JETBRAINS";
+  src: url("../public/static/JetBrainsMono-MediumItalic.ttf");
 }

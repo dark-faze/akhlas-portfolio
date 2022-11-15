@@ -1,7 +1,9 @@
 import Bar from "../components/Bar";
 import { motion } from 'framer-motion'
 import { fadeInUp } from '../animations'
-import { languages, tools } from "../data";
+import { languages, tools, techWorkedWith } from "../data";
+import { IconType } from "react-icons";
+import IconBox  from "../components/IconBox"
 
 const Resume = () => {
 
@@ -49,15 +51,18 @@ const Resume = () => {
           <motion.div variants={fadeInUp} animate='animate' initial='initial'>
           <h5 className="my-3 text-2xl font-bold">Experience</h5>
           <div className="">
-            <h5 className="my-2 text-xl font-bold">Intern Software Developer @</h5>
-            <p className="font-semibold">Agitechavids</p>
-            <p className="my-3">Used my skills to provide value to the company and it's clients.</p>
+            <h5 className="my-2 text-l font-bold">Software Engineer Intern @ Jerno</h5>
+            <p className="my-3 text-m">Worked on Jerno's enterprise products.</p>
+          </div>
+          <div className="">
+            <h5 className="my-2 text-l font-bold">Developer Intern @ Agitechavids</h5>
+            <p className="my-3 text-m ">Made websites for the company and it's clients.</p>
           </div>
           </motion.div>
          </motion.div>
 
       
-      <div className="grid gap-5 md:grid-cols-2">
+      {/* <div className="grid gap-5 md:grid-cols-2">
         <div>
           <h5 className="my-3 text-2xl pb-3 font-bold">Language & Framework</h5>
           <div className="my-2">
@@ -72,6 +77,20 @@ const Resume = () => {
           <div className="my-2">
             {tools.map((tool, i) => (
               <Bar value={tool} key={i} />
+            ))}
+          </div>
+        </div>
+      </div> */}
+
+      <div className="grid gap-5 md:grid-cols-1">
+        <div>
+          <h5 className="my-3 text-2xl pb-3 font-bold">I have worked with</h5>
+          <div className="my-2 grid grid-cols-4">
+            {techWorkedWith.map((i) => (
+              <div className="flex items-center flex-col mb-3">
+              <IconBox service={i} />
+              <span className="text-xs">{i.name}</span>
+              </div>
             ))}
           </div>
         </div>

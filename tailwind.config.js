@@ -12,8 +12,8 @@ module.exports = {
     },
     extend: {
       colors: {
-        "mauve-b": "#08D9D6",
-        "mauve-a": "#5800FF",
+        "mauve-b": "#FF9A3C",
+        "mauve-a": "#FF6F3C",
         dark: {
           DEFAULT: "#010101",
           100: "#0a0b0e",

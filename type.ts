@@ -13,6 +13,10 @@ export interface Skill {
   level: string;
 }
 
+export interface WorkedWith{
+  Icon : IconType;
+  name : string
+}
 export interface IProject {
   id: number;
   name: string;
@@ -24,4 +28,4 @@ export interface IProject {
   key_techs: string[];
 }
 
-export type Category = "React" | "MERN" | "Python" | "Java" | "API";
+export type Category = "React" | "JS/TS" | "Python" | "BlockChain" | "Other";
