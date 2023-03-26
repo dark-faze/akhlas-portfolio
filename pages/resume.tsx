@@ -36,28 +36,35 @@ const Resume = () => {
      
       <motion.div className="grid gap-6 md:grid-cols-2">
       <motion.div variants={fadeInUp} animate='animate' initial='initial'>
-          <h5 className="my-3 text-2xl font-bold">Education</h5>
+          <h5 className="my-3 text-2xl border-b-2 w-3/4 border-white font-bold">Education</h5>
           <div className="">
             <h5 className="my-2 text-xl font-bold">
               Computer Science Engineering
             </h5>
             <p className="font-semibold">Amity University Kolkata (2018-2022)</p>
             <p className="my-3">
-              I am currently pursuing B.tech in Computer Science Engineering
-              from Amity University Kolkata.
+              Completed B.tech in Computer Science Engineering
+              from Amity University Kolkata in 2022.
             </p>
           </div>
           </motion.div>
           <motion.div variants={fadeInUp} animate='animate' initial='initial'>
-          <h5 className="my-3 text-2xl font-bold">Experience</h5>
+          <h5 className="my-3 text-2xl border-b-2 w-3/4 border-white font-bold">Experience</h5>
           <div className="">
+            <h5 className="my-2 text-xl font-bold">⭐ Full Stack Dev @ AgileAlgo</h5>
+            <p className="my-3 text-m">Working on AgileAlgo's AI Product.</p>
+            <div>
+              Tech Stack : Angular, TypeScript, NodeJS, MongoDB, Python, AWS
+            </div>
+          </div>
+          {/* <div className="">
             <h5 className="my-2 text-l font-bold">Software Engineer Intern @ Jerno</h5>
             <p className="my-3 text-m">Worked on Jerno's enterprise products.</p>
           </div>
           <div className="">
             <h5 className="my-2 text-l font-bold">Developer Intern @ Agitechavids</h5>
             <p className="my-3 text-m ">Made websites for the company and it's clients.</p>
-          </div>
+          </div> */}
           </motion.div>
          </motion.div>
 

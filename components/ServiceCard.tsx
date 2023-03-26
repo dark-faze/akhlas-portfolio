@@ -1,9 +1,10 @@
+import Link from 'next/link'
 import { FunctionComponent } from 'react'
 import { IService } from '../type'
 
 
 const ServiceCard: FunctionComponent<{ service: IService }> = ({
-   service: { Icon, title, about },
+   service: { Icon, title, about},
 }) => {
    function createMarkup() {
       return {

@@ -13,10 +13,10 @@ const Sidebar = () => {
         <div>
             <img src='ima.jpg' alt="user pic" className="w-32 h-32 mx-auto rounded-full"/>
             <h3 className = "my-4 text-3xl font-medium tracking-wider font-poppins"> Mohammed <span className="text-mauve-b">Akhlas</span> Hussain</h3>
-            <p className = "px-2 py-1 my-3 bg-gray-200 rounded-full ">Aspiring SDE</p>
-            <a className = "px-2 py-1 my-3 bg-gray-200 rounded-full flex item-center justify-center" >
+            <p className = "px-2 py-1 my-3 bg-gray-200 rounded-full ">Full Stack Developer</p>
+            <a className = "px-2 py-1 my-3 bg-gray-200 rounded-full flex item-center justify-center" href='https://medium.com/@akhlashussain' target='blank'>
                 {/*href="/resume.pdf" download = "resume.pdf"> */}
-            Web3 Enthusiast
+            My Blogs
             </a>
             <div className = "flex justify-around my-5 text-mauve-b w-9/12 md:w-full mx-auto">
                 <a href="https://github.com/dark-faze" target="_blank">

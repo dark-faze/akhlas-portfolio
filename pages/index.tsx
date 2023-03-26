@@ -11,7 +11,7 @@ import { motion } from 'framer-motion'
     animate='visible'
     exit='exit'>">
       <h6 className="my-3 text-base font-medium">
-        B.Tech(CSE) 2022 passout from Amity University Kolkata . I like to build and develop projects and I aspire to become a software developer .
+      I recently graduated with a B.Tech in Computer Science from Amity University Kolkata. I am passionate about building projects with the latest technology, and I am currently exploring cutting-edge AI tech such as Stable Diffusion and CHATGPT."
       </h6>
       <div
         className="flex-grow p-4 mt-5 dark:bg-dark-100 bg-gray-400  "

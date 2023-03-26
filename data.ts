@@ -1,7 +1,8 @@
 import { RiComputerLine } from "react-icons/ri";
-import { FaServer , FaFireAlt , FaReact , FaNodeJs, FaCss3} from "react-icons/fa";
+import { FaServer , FaFireAlt , FaReact , FaNodeJs, FaCss3, FaDatabase, FaAws, FaAngular} from "react-icons/fa";
 import { SiLeetcode , SiEthereum , SiNextDotJs , SiMongodb , SiPython , SiRedux, SiTypescript , SiJavascript, SiJava, SiFirebase, SiMysql} from "react-icons/si";
 import { GrWordpress,GrReactjs } from "react-icons/gr";
+import { ImHammer } from "react-icons/im";
 import { IProject, IService, Skill , WorkedWith} from "./type";
 import { BsCircleFill } from "react-icons/bs";
 import { IconType } from 'react-icons'
@@ -12,36 +13,36 @@ export const services: IService[] = [
     Icon: RiComputerLine,
     title: "Frontend Development",
     about:
-      "I have worked with React.js, Next.js , JS and TS.",
+      "Proficient in Angular.js, React.js and Next.js",
   },
   {
     Icon: FaServer,
-    title: "Backend & DataBase",
+    title: "Backend Development",
     about:
-      "I worked with Node.js, Java with MongoDb, MySql.",
+      "Proficient with Node.js and have worked with Django.",
   },
   {
-    Icon: GrReactjs,
-    title: "MERN Stack",
+    Icon: FaDatabase,
+    title: "Database",
     about:
-      "I have worked with MERN Stack the most.",
+      "Skilled in database design using Mongodb and MySQL.",
   },
   {
-    Icon: SiLeetcode,
-    title: "Practicing DSA",
-    about: "I regularly solve problems on <b>Leetcode</b> and <b>GFG</b>. ",
+    Icon: ImHammer,
+    title: "Always Building",
+    about: "I always do have a side project that I am working on. ",
   },
   {
-    Icon: SiEthereum,
-    title: "Learning BlockChain ",
+    Icon: FaAws,
+    title: "Learning AWS and Exploring AI",
     about:
-      "Exploring the newest tech and useCases.",
+      "Learning AWS services and exploring latest AI tech.",
   },
   {
     Icon: FaFireAlt,
-    title: "Working with new tech",
+    title: "Writing Blogs on Medium",
     about:
-      "I like to use and build projects with new tech.",
+      "I share my knowledge and experiences on Medium.",
   },
 ];
 
@@ -115,8 +116,8 @@ export const techWorkedWith: WorkedWith[] = [
     name: "Node.js",
   },
   {
-    Icon: SiMongodb,
-    name: "MongoDb",
+    Icon: FaAngular,
+    name: "Angular",
   },
   {
     Icon: SiRedux,
