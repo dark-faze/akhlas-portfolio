@@ -8,9 +8,9 @@ const Bar: FunctionComponent<{ value: Skill }> = ({
 }) => {
   const bar_width = `${level}%`;
   return (
-    <div className="my-2 text-white dark:bg-dark-300 bg-gray-300 rounded-full dark:bg-dark-300 dark:bg-black-500">
+    <div className="my-3 text-white bg-gray-200 dark:bg-dark-300 rounded-full overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
       <motion.div
-        className="flex items-center px-4 py-1 rounded-full bg-gradient-to-r from-mauve-a to-mauve-b"
+        className="flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-mauve-a to-mauve-b font-semibold shadow-lg"
         style={{
           width: bar_width,
         }}
@@ -21,16 +21,17 @@ const Bar: FunctionComponent<{ value: Skill }> = ({
           animate: {
              width: bar_width,
              transition: {
-                duration: 0.4,
+                duration: 0.8,
                 type: 'spring',
-                damping: 10,
+                damping: 12,
                 stiffness: 100,
              },
           },
        }}
        animate='animate'
-       initial='initial'>
-        <Icon className="mr-3" /> {name}
+       initial='initial'
+       whileHover={{ scale: 1.02 }}>
+        <Icon className="mr-3 w-5 h-5" /> {name}
         </motion.div>
       </div>
   );

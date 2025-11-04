@@ -11,7 +11,7 @@ const NavItem:FunctionComponent<{
   return (
       activeItem !== name ? (
       <Link href={route}>
-        <span onClick={()=>setActiveItem(name)}className="hover:text-mauve-b">{name}</span>
+        <span onClick={()=>setActiveItem(name)}className="hover:text-mauve-b transition-all duration-300 hover:scale-110 inline-block cursor-pointer font-medium">{name}</span>
       </Link>
      ):null
   )
@@ -29,13 +29,13 @@ const Navbar = () => {
     },[])
 
     return (
-        <div className='flex justify-between px-5 py-3 my-3 '>
-          <span className='font-bold text-mauve-a text-xl border-mauve-b border-b-4 md:text-2xl'>{activeItem}</span> 
-          <div className=' text-lg flex space-x-5'>
+        <div className='flex justify-between px-5 py-4 my-3 '>
+          <span className='font-bold bg-gradient-to-r from-mauve-a to-mauve-b bg-clip-text text-transparent text-2xl md:text-3xl border-b-4 border-mauve-b pb-1'>{activeItem}</span>
+          <div className='text-lg flex space-x-6'>
               <NavItem activeItem={activeItem} setActiveItem={setActiveItem} name='About' route='/' />
               <NavItem activeItem={activeItem} setActiveItem={setActiveItem} name='Projects' route='/projects' />
               <NavItem activeItem={activeItem} setActiveItem={setActiveItem} name='Resume' route='/resume' />
-          </div> 
+          </div>
         </div>
     )
 }

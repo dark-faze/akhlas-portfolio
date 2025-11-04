@@ -36,7 +36,7 @@ const Resume = () => {
      
       <motion.div className="grid gap-6 md:grid-cols-2">
       <motion.div variants={fadeInUp} animate='animate' initial='initial'>
-          <h5 className="my-3 text-2xl border-b-2 w-3/4 border-white font-bold">Education</h5>
+          <h5 className="my-3 text-2xl border-b-4 w-3/4 border-mauve-b font-bold pb-2 bg-gradient-to-r from-mauve-a to-mauve-b bg-clip-text text-transparent">Education</h5>
           <div className="">
             <h5 className="my-2 text-xl font-bold">
               Computer Science Engineering
@@ -49,7 +49,7 @@ const Resume = () => {
           </div>
           </motion.div>
           <motion.div variants={fadeInUp} animate='animate' initial='initial'>
-          <h5 className="my-3 text-2xl border-b-2 w-3/4 border-white font-bold">Experience</h5>
+          <h5 className="my-3 text-2xl border-b-4 w-3/4 border-mauve-b font-bold pb-2 bg-gradient-to-r from-mauve-a to-mauve-b bg-clip-text text-transparent">Experience</h5>
           <div className="">
             <h5 className="my-2 text-xl font-bold">⭐ Full Stack Dev @ AgileAlgo</h5>
             <p className="my-3 text-m">Working on AgileAlgo's AI Product.</p>
@@ -68,10 +68,10 @@ const Resume = () => {
           </motion.div>
          </motion.div>
 
-      
-      {/* <div className="grid gap-5 md:grid-cols-2">
+
+      <motion.div className="grid gap-5 md:grid-cols-2 mt-8" variants={fadeInUp} animate='animate' initial='initial'>
         <div>
-          <h5 className="my-3 text-2xl pb-3 font-bold">Language & Framework</h5>
+          <h5 className="my-3 text-2xl pb-3 font-bold bg-gradient-to-r from-mauve-a to-mauve-b bg-clip-text text-transparent">Language & Framework</h5>
           <div className="my-2">
             {languages.map((language, i) => (
               <Bar value={language} key={i} />
@@ -80,18 +80,18 @@ const Resume = () => {
         </div>
 
         <div>
-          <h5 className="my-3 text-2xl pb-3 font-bold">Tools & Softwares</h5>
+          <h5 className="my-3 text-2xl pb-3 font-bold bg-gradient-to-r from-mauve-a to-mauve-b bg-clip-text text-transparent">Tools & Softwares</h5>
           <div className="my-2">
             {tools.map((tool, i) => (
               <Bar value={tool} key={i} />
             ))}
           </div>
         </div>
-      </div> */}
+      </motion.div>
 
       <div className="grid gap-5 md:grid-cols-1">
         <div>
-          <h5 className="my-3 text-2xl pb-3 font-bold">I have worked with</h5>
+          <h5 className="my-3 text-2xl pb-3 font-bold bg-gradient-to-r from-mauve-a to-mauve-b bg-clip-text text-transparent">I have worked with</h5>
           <div className="my-2 grid grid-cols-4">
             {techWorkedWith.map((i) => (
               <div className="flex items-center flex-col mb-3">

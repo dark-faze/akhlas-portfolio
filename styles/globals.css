@@ -2,20 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: black;
-  font-family: sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: #354358;
-  font-family: poppins;
 }
 
 ::-webkit-scrollbar-thumb {
   background-image: linear-gradient(to right bottom, #7149C6, #FC2947);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-image: linear-gradient(to right bottom, #FC2947, #7149C6);
 }
 
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 10px;
   height: 0px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
 }
 
 @font-face {
